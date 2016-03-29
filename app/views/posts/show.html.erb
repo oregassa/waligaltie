@@ -2,7 +2,12 @@
 <div class="well col-xs-8 col-xs-offset-2">
   <h4 align="center"><strong>Content:</strong></h4> 
   <hr>
+
   <%= simple_format(@post.content) %>
+  <h1><%= @post.comments.count %> Comment:</h1>
+      <%= render @post.comments %>
+      <%= render 'comments/form' %>
+
   <div class="post-actions">
 <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-xs btn-primary" %>
 <%= link_to "View all posts", posts_path, class: "btn btn-xs btn-success" %>
