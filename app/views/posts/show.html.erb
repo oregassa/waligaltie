@@ -1,0 +1,12 @@
+<h2 align="center">Title: <%= @post.title %> </h2>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 align="center"><strong>Content:</strong></h4> 
+  <hr>
+  <%= simple_format(@post.content) %>
+  <div class="post-actions">
+<%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-xs btn-primary" %>
+<%= link_to "View all posts", posts_path, class: "btn btn-xs btn-success" %>
+<%= link_to "Delete the post", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"}, class: "btn btn-xs btn-danger" %>
+  </div>
+</div>
+

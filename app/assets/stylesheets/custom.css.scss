@@ -1,0 +1,102 @@
+@import "bootstrap-sprockets";
+@import "bootstrap"; 
+
+
+
+/* top left logo */
+
+#logo {
+    color: #00CCFF;
+    font-weight: bold;
+}
+
+
+
+/* debug */
+
+.debug_dump {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+
+
+
+/* footer */
+
+
+footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: black;
+}
+
+footer a:hover {
+	color: #00CCFF;
+}
+
+footer small {
+	float: left;
+}
+
+footer ul {
+	float: right;
+	list-style: none;
+}
+
+footer ul li {
+	float: left;
+	margin-left: 15px;
+}
+
+
+.btn {
+	align: center;
+}
+
+
+
+
+/* post show */
+
+.post-actions {
+	padding-top: 10px;
+	border-top: 1px solid lightgray;
+}
+
+
+.post-title {
+	font-weight: bold;
+	font-size: 1.5em;	
+}
+
+.post-body {
+	border-top: 1px solid lightgray;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+
+/* post index */
+
+.post-meta-details {
+	border-top: 1px solid lightgray;
+	margin-top: 12px;
+}
+
+
+
+/* user in&out */
+
+.navbar-right {
+	padding-top: 17px;
+}
+
+
+.navbar-default {
+	margin: -50px 10px;
+	padding: 0 10px 0 5px;
+}
