@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index]
+  before_action :is_owner?, only: [:update, :edit, :destroy]
+
 
   def index
     @posts = Post.all
@@ -54,6 +56,13 @@ class PostsController < ApplicationController
 
 
   private 
+
+  def is_owner?
+    unless current_user == @post.user
+      flash[:danger] = "You are not allowed to access this product."
+      redirect_to posts_path
+    end
+  end  
 
   def set_post
   	@post = Post.find(params[:id])

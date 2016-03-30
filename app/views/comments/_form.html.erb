@@ -1,11 +1,11 @@
-<%= form_for([@post, @post.comments.build]) do |f| %>
-<p>
-  <%= f.label :comment %> <br>
-  <%= f.text_field :comment %>
-</p>
-
-<p>
-  <%= f.submit %>
-</p>
+<div class="row">
+  <%= form_for([@post, @post.comments.build]) do |f| %>
+    <div class="form-group">
+      <div class="control-lable col-sm-5"></div>
+        <div class="comment-box">
+  	     <%= f.text_area :comment, rows:10, class: "form-control" %>
+        </div>
+    </div>
+<div class='col-sm col-sm-10'><%= f.submit %></div>
 <% end %>
-
+</div> 

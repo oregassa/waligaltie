@@ -2,6 +2,10 @@
 @import "bootstrap"; 
 
 
+a:link, a:visited {
+  text-decoration: none;
+} 
+
 
 /* top left logo */
 
@@ -72,11 +76,14 @@ footer ul li {
 	font-size: 1.5em;	
 }
 
+
 .post-body {
 	border-top: 1px solid lightgray;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+
 
 
 
@@ -89,11 +96,15 @@ footer ul li {
 
 
 
+
+
 /* user in&out */
 
 .navbar-right {
 	padding-top: 17px;
 }
+
+
 
 
 .navbar-default {
@@ -103,9 +114,71 @@ footer ul li {
 
 
 
-a:link, a:visited {
-  text-decoration: none;
-} 
+
+
+/* comments */
+
+.author_comment {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+}
+
+
+
+
+.author_email {
+    font-style: italic;
+    color: darkseagreen;
+    margin-top: 2em;
+    float: right;
+}
+
+
+
+
+
+/* Add post link */
+
+.new-post {
+	border: 1px solid #337ab7;
+    color: #337ab7;
+    padding: .5em 1em ;
+    border-radius: .5em;
+    text-decoration: none;
+    float: right;
+    background-color: lightgray;
+}
+
+
+
+
+/* comment box */
+
+.comment-box {
+	margin: 10px;
+}
+
+
+
+/* comment create btn */
+
+.col-sm {
+    margin-bottom: 20px;
+    color: darkseagreen;
+    border-radius: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

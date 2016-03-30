@@ -1,5 +1,6 @@
-<h1 class='comment'></h1>
+<div class='author_comment'>
 <p><%= comment.comment %></p>
-<small><%= comment.user.email %></small> <br>
+<small class='author_email'>By: <%= comment.user.email %></small> <br>
 <%= link_to 'Edit', edit_post_comment_path(comment.post, comment) %> |
 <%= link_to 'Delete comment', [comment.post, comment], method: :delete, data: {confirm: 'Are you sure?'} %>
+</div> 

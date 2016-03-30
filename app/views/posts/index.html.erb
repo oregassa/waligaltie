@@ -1,5 +1,5 @@
 <h1 align="center">Listing all posts</h1>
-<%= link_to "- Add a new post", new_post_path%>
+<div class='new-post'><%= link_to "Add a new post", new_post_path%></div>
 <% @posts.each do |post| %>
   <div class="row">
     <div class="col-xs-8 col-xs-offset-2">

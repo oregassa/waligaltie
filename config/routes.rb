@@ -4,5 +4,5 @@ resources  :posts do
   resources :comments
 end
 
-root 'home'              'posts#index'
+root               'posts#index'
 end

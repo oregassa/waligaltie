@@ -1,11 +1,15 @@
-<h1>Reply</h1>
-<%= form_for([@post, @comment]) do |f| %>
-<p>
-  <%= f.label :comment %> <br>
-  <%= f.text_field :comment %>
-</p>
-
-<p>
-  <%= f.submit %>
-</p>
+<h1 align="center">Update your comment</h1>
+<div align="center">
+  <%= form_for([@post, @comment]) do |f| %>
+  	     <%= f.text_area :comment, rows:10, class: "form-control" %>
+        </div>
+    </div>
+</div>
+<div class="form-group">
+  <div class="col-sm-offset-5 col-sm-10">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+</div>
 <% end %>
+
+
