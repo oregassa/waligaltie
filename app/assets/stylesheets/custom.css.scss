@@ -2,9 +2,7 @@
 @import "bootstrap"; 
 
 
-a:link, a:visited {
-  text-decoration: none;
-} 
+
 
 
 /* top left logo */
@@ -13,6 +11,7 @@ a:link, a:visited {
     color: #00CCFF;
     font-weight: bold;
 }
+
 
 
 
@@ -28,7 +27,6 @@ a:link, a:visited {
 
 
 /* footer */
-
 
 footer {
 	margin-top: 45px;
@@ -63,6 +61,9 @@ footer ul li {
 
 
 
+
+
+
 /* post show */
 
 .post-actions {
@@ -87,12 +88,24 @@ footer ul li {
 
 
 
+
+
+
 /* post index */
 
 .post-meta-details {
 	border-top: 1px solid lightgray;
 	margin-top: 12px;
 }
+
+.row {
+    background: #EDEFF0;
+}
+
+.col-xs-8 {
+    background: white;
+}
+
 
 
 
@@ -102,9 +115,8 @@ footer ul li {
 
 .navbar-right {
 	padding-top: 17px;
+    color: #337ab7;
 }
-
-
 
 
 .navbar-default {
@@ -116,18 +128,17 @@ footer ul li {
 
 
 
+
+
 /* comments */
 
-.author_comment {
+.author-comment {
     border-bottom: 1px solid lightgray;
     padding-bottom: 3em;
     margin-bottom: 3em;
 }
 
-
-
-
-.author_email {
+.author-email {
     font-style: italic;
     color: darkseagreen;
     margin-top: 2em;
@@ -138,17 +149,22 @@ footer ul li {
 
 
 
+
 /* Add post link */
 
 .new-post {
 	border: 1px solid #337ab7;
     color: #337ab7;
-    padding: .5em 1em ;
+    padding: .5em 2.5em;
+    margin: 0 10px 0 0;
     border-radius: .5em;
     text-decoration: none;
     float: right;
-    background-color: lightgray;
+    background: white;
 }
+
+
+
 
 
 
@@ -161,17 +177,136 @@ footer ul li {
 
 
 
+
+
+
 /* comment create btn */
 
 .col-sm {
     margin-bottom: 20px;
-    color: darkseagreen;
+    color: #337ab7;
     border-radius: .5em;
 }
 
 
 
 
+
+
+
+/* comment links */
+
+.comment-edit {
+    border: 1px solid gray;
+    background-color: skyblue;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: 0 3px 0 0;
+}
+
+.comment-edit a:link {
+	text-decoration: none;
+}
+
+
+.comment-delete {
+    border: 1px solid gray;
+    background-color: salmon;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: 0 0 0 3px;
+}
+
+.comment-delete a:link {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* post links */
+
+.post-comment-edit {
+    border: 1px solid gray;
+    background-color: skyblue;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: 0 0 0 3px;
+}
+
+.post-comment-edit a:link {
+	text-decoration: none;
+}
+
+.post-comment-view {
+    border: 1px solid gray;
+    background-color: darkseagreen;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: 0 0 0 3px;
+}
+
+.post-comment-view a:link {
+	text-decoration: none;
+}
+
+.post-comment-delete {
+    border: 1px solid gray;
+    background-color: salmon;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: 0 0 0 3px;
+}
+
+.post-comment-delete a:link {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/* post index */
+
+.post-edit {
+	border: 1px solid gray;
+    background-color: skyblue;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: -7px 5px;
+}
+
+
+.post-edit a:link {
+	text-decoration: none;
+}
+
+
+.post-delete {
+	border: 1px solid gray;
+    background-color: coral;
+    border-radius: .5em;
+    padding: 2px;
+    margin: -7px 5px;
+    float: left;
+}
+
+.post-delete a:link {
+	text-decoration: none;
+}
 
 
 

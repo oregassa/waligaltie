@@ -1,6 +1,12 @@
-<div class='author_comment'>
-<p><%= comment.comment %></p>
-<small class='author_email'>By: <%= comment.user.email %></small> <br>
-<%= link_to 'Edit', edit_post_comment_path(comment.post, comment) %> |
-<%= link_to 'Delete comment', [comment.post, comment], method: :delete, data: {confirm: 'Are you sure?'} %>
+<div class='author-comment'>
+  <p><%= comment.comment %></p>
+    <small class='author-email'>
+      By: <%= comment.user.email %>
+    </small> <br>
+      <p class='comment-edit'>
+        <%= link_to 'Edit comment', edit_post_comment_path(comment.post, comment) %>
+      </p> 
+      <p class='comment-delete'>
+        <%= link_to 'Delete comment', [comment.post, comment], method: :delete, data: {confirm: 'Are you sure?'} %>
+      </p>
 </div> 

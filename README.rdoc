@@ -1,9 +1,9 @@
  
-            WHO'S THE APP FOR?
+                                   WHO'S THE APP FOR?
 
-- This is an app designed for my sunday school students for a place, meeting, or channel where ideas and views on whatever issues can be exchanged.
+- Waligaltie is a web app where the middle school Sunday school class children of Ebenezer Oromo Evangelical Church can meet throughout the week and interact with each other. 
 
 
-             HOW TO USE THE APP
+                                   HOW TO USE THE APP
 
 - USERS can create POSTS and make COMMENTS on other users posts.

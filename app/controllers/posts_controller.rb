@@ -58,7 +58,7 @@ class PostsController < ApplicationController
   private 
 
   def is_owner?
-    unless current_user == @post.user
+     unless @post.user_id == current_user.id
       flash[:danger] = "You are not allowed to access this product."
       redirect_to posts_path
     end

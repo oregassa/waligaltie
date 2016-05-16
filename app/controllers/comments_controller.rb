@@ -1,9 +1,8 @@
 class CommentsController < ApplicationController
 	before_action :set_post, only: [:edit, :update, :destroy]
   before_action :set_comment, only: [:edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:show]
+  before_action :authenticate_user!, except: [:edit, :update, :destroy]
   before_action :is_owner?, only: [:update, :edit, :destroy]
-
 
   def create
     @post = Post.find(params[:post_id])
@@ -12,12 +11,12 @@ class CommentsController < ApplicationController
     @comment.user = current_user
     @comment.save
 
-    if @comment.save
+    if @comment.save 
       redirect_to post_path(@post)
       else
      	render 'new'
-      end 
-    end
+    end 
+  end
 
 
   def edit
@@ -33,33 +32,32 @@ class CommentsController < ApplicationController
     end
   end
 
-
   def destroy
     @comment.destroy
     redirect_to post_path(@post)
   end
 
 
-   private
+  private
 
-   def is_owner?
-    unless current_user == @post.user
+  def is_owner?
+    unless @comment.user_id == current_user.id
       flash[:danger] = "You are not allowed to access this product."
       redirect_to posts_path
     end
-   end 
+  end 
 
-   def set_post
-     @post = Post.find(params[:post_id])
-   end
+  def set_post
+    @post = Post.find(params[:post_id])
+  end
 
-   def set_comment
-     @comment = @post.comments.find(params[:id])
-   end
+  def set_comment
+    @comment = @post.comments.find(params[:id])
+  end
 
-   def comment_params
-     params.require(:comment).permit(:comment)
-   end
+  def comment_params
+    params.require(:comment).permit(:comment)
+  end
 end
 
 
