@@ -1,7 +1,7 @@
 <div class='author-comment'>
   <p><%= comment.comment %></p>
     <small class='author-email'>
-      By: <%= comment.user.email %>
+      By: <%= comment.user.username %>
     </small> <br>
       <p class='comment-edit'>
         <%= link_to 'Edit comment', edit_post_comment_path(comment.post, comment) %>

@@ -5,6 +5,27 @@
 
 
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: #919191;
+    font-family: 'lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
 /* top left logo */
 
 #logo {
@@ -106,6 +127,58 @@ footer ul li {
     background: white;
 }
 
+.post-title {
+    font-family: fantasy;
+    color: lightskyblue;
+}
+
+
+.new-post {
+    border: 1px solid #337ab7;
+    color: #337ab7;
+    padding: .5em .5em .5em .5em;
+    margin: 0 27px 0 0;
+    border-radius: .5em;
+    text-decoration: none;
+    float: right;
+    background: white;
+}
+
+
+.post-edit {
+    border: 1px solid gray;
+    background-color: skyblue;
+    border-radius: .5em;
+    padding: 2px;
+    float: left;
+    margin: -7px 1px;
+    font-family: sans-serif;
+}
+
+
+.post-edit a:link {
+    text-decoration: none;
+}
+
+
+.post-delete {
+    border: 1px solid gray;
+    background-color: coral;
+    border-radius: .5em;
+    padding: 2px;
+    margin: -7px 5px;
+    float: left;
+    font-family: sans-serif;
+}
+
+.post-delete a:link {
+    text-decoration: none;
+}
+
+
+
+
+
 
 
 
@@ -143,24 +216,6 @@ footer ul li {
     color: darkseagreen;
     margin-top: 2em;
     float: right;
-}
-
-
-
-
-
-
-/* Add post link */
-
-.new-post {
-	border: 1px solid #337ab7;
-    color: #337ab7;
-    padding: .5em 2.5em;
-    margin: 0 10px 0 0;
-    border-radius: .5em;
-    text-decoration: none;
-    float: right;
-    background: white;
 }
 
 
@@ -239,7 +294,7 @@ footer ul li {
     border-radius: .5em;
     padding: 2px;
     float: left;
-    margin: 0 0 0 3px;
+    margin: 0 0 0 -5px;
 }
 
 .post-comment-edit a:link {
@@ -248,7 +303,7 @@ footer ul li {
 
 .post-comment-view {
     border: 1px solid gray;
-    background-color: darkseagreen;
+    background-color: lightgreen;
     border-radius: .5em;
     padding: 2px;
     float: left;
@@ -277,42 +332,15 @@ footer ul li {
 
 
 
+/*  Navbar */
 
-/* post index */
-
-.post-edit {
-	border: 1px solid gray;
-    background-color: skyblue;
-    border-radius: .5em;
-    padding: 2px;
-    float: left;
-    margin: -7px 5px;
+.navbar {
+    border:1px solid lightgray;    
+    margin-top: -30px;
+    border-radius: 3em;
+    background: lightgreen;
+    padding: 0 20px 0 10px;
 }
-
-
-.post-edit a:link {
-	text-decoration: none;
-}
-
-
-.post-delete {
-	border: 1px solid gray;
-    background-color: coral;
-    border-radius: .5em;
-    padding: 2px;
-    margin: -7px 5px;
-    float: left;
-}
-
-.post-delete a:link {
-	text-decoration: none;
-}
-
-
-
-
-
-
 
 
 

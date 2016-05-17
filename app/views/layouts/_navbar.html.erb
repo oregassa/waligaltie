@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
 <body>
 
-<nav class="navbar ">
+<nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <%= link_to "WALIGALTIE", root_path, class:"navbar-brand", id:"logo" %>
@@ -22,7 +14,7 @@
     <ul class="navbar-right">
       <% if user_signed_in? %>
       Hey there <%= current_user.username %>
-    | <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %> 
+    | <%= link_to "Sign Out", destroy_user_session_path, method: :delete %> 
       <% else %>
       <%= link_to 'Sign In', new_user_session_path %> 
     | <%= link_to 'Sign Up', new_user_registration_path %> 
