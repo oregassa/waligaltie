@@ -1,9 +1,10 @@
 class CommentsController < ApplicationController
-	before_action :set_post, only: [:edit, :update, :destroy]
+  before_action :set_post, only: [:edit, :update, :destroy]
   before_action :set_comment, only: [:edit, :update, :destroy]
   before_action :authenticate_user!, except: [:edit, :update, :destroy]
   before_action :is_owner?, only: [:update, :edit, :destroy]
 
+  
   def create
     @post = Post.find(params[:post_id])
     @post.user = current_user
@@ -14,7 +15,7 @@ class CommentsController < ApplicationController
     if @comment.save 
       redirect_to post_path(@post)
       else
-     	render 'new'
+      render 'new'
     end 
   end
 
@@ -26,9 +27,9 @@ class CommentsController < ApplicationController
 
   def update
     if @comment.update(comment_params)
-    	redirect_to post_path(@post)
+      redirect_to post_path(@post)
     else
-    	render 'edit'
+      render 'edit'
     end
   end
 

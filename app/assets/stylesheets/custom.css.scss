@@ -25,7 +25,6 @@ html {
 
 
 
-
 /* top left logo */
 
 #logo {
@@ -127,11 +126,22 @@ footer ul li {
     background: white;
 }
 
+
 .post-title {
     font-family: fantasy;
-    color: lightskyblue;
 }
 
+
+.post-title a:hover {
+    font-family: cursive;
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+
+.new-post a:hover {
+    text-decoration: none;
+}
 
 .new-post {
     border: 1px solid #337ab7;
@@ -332,7 +342,7 @@ footer ul li {
 
 
 
-/*  Navbar */
+/*  navbar */
 
 .navbar {
     border:1px solid lightgray;    
@@ -341,6 +351,47 @@ footer ul li {
     background: lightgreen;
     padding: 0 20px 0 10px;
 }
+
+
+
+
+
+/* show page above comment */
+
+.author-email {
+    font-weight: 900;
+}
+
+
+
+
+
+/* home page */
+
+.home-page {
+    border:1px solid lightgray;    
+    border-radius: 1em;
+}
+.features {
+    border-bottom: 1px solid lightgray;
+    background: lightskyblue;
+    margin-top: -1px;  
+    border-top-left-radius: .4em 0.4em;
+    border-top-right-radius: .4em 0.4em;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

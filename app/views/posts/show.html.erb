@@ -9,7 +9,7 @@
         <%= render 'comments/form' %>
 
   <div class="post-actions">
-  	<p class='post-comment-edit'>
+    <p class='post-comment-edit'>
       <%= link_to "Edit this post", edit_post_path(@post) %>
     </p>
 
@@ -19,9 +19,11 @@
 
     <p class='post-comment-delete'>
       <%= link_to "Delete the post", post_path(@post), method: :delete, data: {confirm: "Are you sure you want to delete this post?"} %>
-    </p>
+    </p> 
   </div>
+  
 </div>
+
 
 
 
