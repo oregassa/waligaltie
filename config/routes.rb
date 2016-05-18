@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
 
-get "/home" => "pages#home"
-get "/about" => "pages#about"
-get "/contact" => "pages#contact"
 
 devise_for :users
+resources :contacts, only: [:new, :create]
 
 resources  :posts do 
   resources :comments
 end
+
+get "/home" => "pages#home"
+get "/about" => "pages#about"
 
 root 'posts#index'
 end
