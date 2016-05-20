@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
       flash.now[:error] = nil
     else
       flash.now[:error] = 'Cannot send message.'
-      redirect_to new_contact_path
+      redirect_to :new
     end
   end
 end
