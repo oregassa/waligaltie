@@ -1,34 +1,39 @@
-<h1 id="page_title">Hey there, what's up?</h1>
+    <div class="row">
+      <div align="center">
+        <h2>Any input about this sites? </h2>
+          <hr class="primary">
+          <p>Fill out the form below and someone we'll get back to you shortly</p>
+      </div>
+        <div align="center">
+          <%= form_for @contact do |f| %>
 
-<div class="wrapper">
-  <%= form_for @contact do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, required: true %>
+            <div class="col-md-6 text-faded">
+              <%= f.label :name %>
+              <%= f.text_field :name, required: true, :class => "form-control", :placeholder => "Name"%>
+            </div>
 
-    <br>
+            <div class="col-md-6 text-faded">
+              <%= f.label :email %>
+              <%= f.email_field :email, required: true, :class => "form-control", :placeholder => "Email" %>
+            </div>
 
-    <%= f.label :email %>
-    <%= f.text_field :email, required: true %>
+            <div class="col-md-12 text-faded">
+              <%= f.label :message %>
+              <%= f.text_area :message, as: :text, :class => "form-control", :rows=>"9", :placeholder => "Your message here.."%>
+            </div>
 
-    <br>
+            <div class="hidden">
+              <%= f.label :nickname %><br>
+              <%= f.text_field :nickname, hint:"leave this field blank"%>
+            </div>
+           
+            <div class="contact-submit">
+              <%= f.submit "Send Message" %>
+            </div>
 
-    <%= f.label :message %>
-    <%= f.text_area :message, as: :text, required: true %>
-
-  <div class="hidden">
-    <%= f.label :nickname %>
-    <%= f.text_field :nickname, hint: "leave this field blank" %>
-  </div>
-
-    <%= f.submit "Send Message", class: "button" %>
-
-  <% end %>
-</div>
-
-
-
-
-
+        <%end%>
+        </div>
+    </div>
 
 
 
